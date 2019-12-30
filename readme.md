@@ -1,4 +1,4 @@
-To play the game, download al files to a single location and launch the rpsclickable.html file in your browser.
+To play the game, download all files to a single location and launch the rpsclickable.html file in your browser.
 
 Rock Paper Scissors rules:
 -Player and Computer AI choose either rock, paper, or scissors.

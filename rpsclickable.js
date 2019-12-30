@@ -1,7 +1,5 @@
-// js code goes herecomputerPlay = "";
 let choice = "";
-let pwins = 0;
-let cwins = 0;
+let winner = 0;
 
 function makeRandomNumber(){
     randomNumber = Math.floor(Math.random() * 3);
@@ -32,6 +30,8 @@ let paperChoice = document.querySelector("#paperImage");
 let scissorsChoice = document.querySelector("#scissorsImage");
 let playerResult = document.querySelector("#playerImage").src;
 let computerResult = document.querySelector("#computerImage".src);
+let playAgain = document.querySelector("#playAgain");
+
 
 rockChoice.addEventListener("click", () => {
 	choice = "rock";
@@ -48,69 +48,49 @@ scissorsChoice.addEventListener("click",  () => {
 	document.querySelector("#playerImage").src = "media/scissors.jpg"
 	playRound(choice);
 });
+playAgain.addEventListener("click",  () => {
+	document.querySelector("#playerImage").src = "media/none.png"
+	document.querySelector("#computerImage").src = "media/none.png"
+	document.querySelector("#result").textContent = "";
+
+});
 
 function playRound(choice){
     computerTurn();
     if (choice === "rock"){
         if (computerPlay === "rock"){
-            alert("Round was a draw...you both chose rock.")
+            winner = "It's a Draw!";
         }
         else if (computerPlay === "paper"){
-            alert("Computer wins with 'paper'");
-            cwins ++;
+            winner = "You lose...";
         }
         else {
-            alert("Computer chose scissors. You win the round!");
-            pwins++;
+            winner = "You Win!";
         }
     }
     else if (choice === "paper"){
     	if (computerPlay === "rock"){
-            alert("Computer chose rock. You win the round!");
-            pwins++;
+            winner = "You Win!";
         }
         else if (computerPlay === "paper"){
-            alert("Round was a draw...you both chose 'paper.'");
+            winner = "It's a Draw!";
         }
         else {
-            alert("Computer wins with 'scissors'");
-            cwins++;
+            winner = "You lose...";
         }   
     }
     else {
         if (computerPlay === "rock"){
-            alert("Computer wins with 'rock'");
-            cwins++;
+            winner = "You lose...";
         }
         else if (computerPlay === "paper"){
-            alert("Computer chose paper. You win the round!");
-            pwins++;
+            winner = "You Win!";
         }
         else {
-            alert("Round was a draw...you both chose 'scissors.'"); 
+            winner = "It's a Draw!";
         }
         
     }
+    document.querySelector("#result").textContent = winner;
 }
-
-// function playGame(){
-//     cwins = 0;
-//     pwins = 0;
-//     playRound()
-//     playRound()
-//     playRound()
-//     playRound()
-//     playRound()
-//     if(cwins > pwins){
-//         console.log("The computer won the game! You lose.");
-//     }
-//     else if(cwins < pwins){
-//         console.log("You beat the computer at PRS! What are you doing with your life?");
-//     }
-//     else {
-//         console.log("The game is a draw. No winners here.");
-//     }
-//     console.log("Final Score: \nYou: " + pwins + "\nComputer: " + cwins);
-// }
-
  

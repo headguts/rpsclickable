@@ -1,6 +1,6 @@
 html {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 
 h2 {
 	text-align: center;
-	border: 1px solid white;
+	border: 1px solid black;
 }
 
 img {
@@ -30,7 +30,7 @@ img {
 #choiceArea {
 	float: left;
 	width: 300px;
-	border: 1px solid white;
+	border: 1px solid black;
 	padding: 20px;
 	height: 700px;
 }
@@ -38,7 +38,7 @@ img {
 #playArea {
 	float: right;
 	width: 500px;
-	border: 1px solid white;
+	border: 1px solid black;
 	padding: 20px;
 	height: 700px;
 }
@@ -50,3 +50,8 @@ img {
 #computerResultImage {
 	float: right;
 }
+
+.clean {
+	content:url(media/none);
+}
+

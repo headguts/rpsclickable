@@ -2,8 +2,45 @@
 <html>
 <head>
 	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="rpsclickable.css">
 </head>
 <body>
+<!-- *********************************************************** -->
+	<div id="title">
+		<!-- title and winner status -->
+		<h1>Rock! Paper! Scissors!</h1>
+	</div>
+<!-- *********************************************************** -->
+	<div id="choiceArea">
+		<!-- right play area, players choices -->
+		<h2>Choose Your Weapon:</h2>
+		
+		<img src="media/rock.jpg" class="choices" id="rockImage">
+		<img src="media/paper.jpg" class="choices" id="paperImage">
+		<img src="media/scissors.jpg" class="choices" id="scissorsImage">
+		
 
+	</div>
+<!-- *********************************************************** -->
+	<div id="playArea">
+		<h2>THE ARENA</h2>
+		<!-- left play area, game area -->
+		<!-- *********************************************************** -->
+		<div id="playerResult">
+			<h2>Your choice:</h2>
+			<img id="playerImage" src="media/none.png">
+		</div>
+		<!-- *********************************************************** -->
+		<div id="computerResult">
+			<h2>Computer choice:</h2>
+			<img id="computerImage" src="media/none.png">
+		</div>
+		<!-- *********************************************************** -->
+		<div id="playAgainButton">
+			<button>PLAY AGAIN</button>
+		</div>
+	</div>
+<!-- *********************************************************** -->
+<script type="text/javascript" src="rpsclickable.js"></script>
 </body>
 </html>

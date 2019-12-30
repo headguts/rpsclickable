@@ -1,3 +1,52 @@
 html {
-	background: black;
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	border: 1px solid white;
+}
+
+img {
+	align-self: center;
+	width: 175px;
+	height: 175px;
+	padding: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#playAgainButton {
+	text-align: center;
+	padding: 20px;
+}
+
+#choiceArea {
+	float: left;
+	width: 300px;
+	border: 1px solid white;
+	padding: 20px;
+	height: 700px;
+}
+
+#playArea {
+	float: right;
+	width: 500px;
+	border: 1px solid white;
+	padding: 20px;
+	height: 700px;
+}
+
+#playerResultImage {
+	float: left;
+}
+
+#computerResultImage {
+	float: right;
 }
